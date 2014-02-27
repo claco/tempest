@@ -8,7 +8,7 @@ uri = http://<%= @keystone_access_point %>:<%= @keystone_port %>/v2.0/
 
 strategy = keystone
 
-region = RegionOne
+region = <%= @tempest_region %>
 
 username = <%= @tempest_user1 %>
 password = <%= @tempest_user1_pass %>
