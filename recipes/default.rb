@@ -240,6 +240,7 @@ template "/opt/tempest/etc/tempest.conf" do
             "tempest_use_ssl" => node["tempest"]["use_ssl"],
             "keystone_access_point" => ks_service_endpoint["host"],
             "keystone_port" => ks_service_endpoint["port"],
+            "tempest_region" => node["osops"]["region"],
             "tempest_tenant_isolation" => node["tempest"]["tenant_isolation"],
             "tempest_tenant_reuse" => node["tempest"]["tenant_reuse"],
             "tempest_user1" => node["tempest"]["user1"],
